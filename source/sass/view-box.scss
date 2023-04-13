@@ -1,0 +1,11 @@
+@import 'variables.scss';
+
+.view-box {
+  width: 284px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: auto;
+  }
+}

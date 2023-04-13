@@ -1,0 +1,10 @@
+@import 'variables.scss';
+
+.map {
+  width: 320px;
+  height: 350px;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+  }
+}

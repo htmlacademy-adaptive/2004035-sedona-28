@@ -1,0 +1,21 @@
+.develop {
+  height: 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.develop__link {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  padding: 7px 40px 7px 0;
+  background-position: top right -5px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/htmlacademy.svg');
+}

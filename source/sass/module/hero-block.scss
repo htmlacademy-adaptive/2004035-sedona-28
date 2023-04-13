@@ -1,0 +1,27 @@
+@import 'variables.scss';
+
+.hero-block {
+  position: relative;
+  height: 389px;
+  background-image: url(../../img/intro-triangle.svg), url(../../img/back-desktop.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom -0.2px, center;
+  background-size: auto, cover;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    height: 518px;
+  }
+}
+
+.hero-block__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet) {
+    width: 461px;
+    height: 349.97px;
+  }
+}

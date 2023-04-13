@@ -1,0 +1,52 @@
+@import '../variables';
+
+.interested {
+  padding: 38px 0 49px;
+
+  @media (min-width: $tablet) {
+    width: 458px;
+  }
+}
+
+.interested__title {
+  font-family: "PT Sans ", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+.interested__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 435px;
+    margin: 0 auto;
+  }
+}
+
+.interested__link {
+  margin-top: 32px;
+
+  @media (min-width: $tablet) {
+    margin-top: 46px;
+  }
+}

@@ -1,0 +1,24 @@
+@import 'variables.scss';
+
+.button {
+  display: block;
+  font-family: "PT Sans ", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 36.5px;
+  text-align: center;
+  background-color: $main-blue-color;
+  margin: 0;
+
+  &:hover {
+    background-color: $main-blue-color-hover;
+  }
+  &:active {
+    background-color: $main-blue-color-down;
+  }
+}

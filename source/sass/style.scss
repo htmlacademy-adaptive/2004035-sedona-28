@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+@use './fonts.scss';
+@use './visually-hidden.scss';
+@use './container.scss';
+@use './view-box.scss';
+@use './button.scss';
+@use './module/page.scss';
+// Header
+@use './module/header.scss';
+@use './module/logo-city-link.scss';
+@use './module/navigation.scss';
+// Mail-index
+@use './module/hero-block.scss';
+@use './module/advantages.scss';
+@use './module/advantages-header.scss';
+@use './module/addition.scss';
+@use './module/interested.scss';
+@use './module/map.scss';
+// Footer
+@use './module/footer.scss';
+@use './module/social-list.scss';
+@use './module/develop.scss';

@@ -1,0 +1,43 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.social-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-list__item {
+  width: 48px;
+  height: 48px;
+  background-color: $main-blue-color;
+
+  &:nth-child(2) {
+    margin: 0 6px;
+  }
+
+  &:hover {
+    background-color: $main-blue-color-hover;
+  }
+  &:active {
+    background-color: $main-blue-color-down;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../../img/svg/vk.svg");
+  }
+  &--telegram {
+    background-image: url("../../img/svg/telegram.svg");
+  }&--youtube {
+    background-image: url("../../img/svg/youtube.svg");
+  }
+}
