@@ -7,9 +7,16 @@
   align-items: center;
 
   @media (min-width: $tablet) {
+    box-sizing: border-box;
     padding: 36px 60px;
     justify-content: space-between;
     flex-direction: row;
+    width: 768px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop) {
+    padding: 47px 120px;
+    width: 1200px;
   }
 }
 

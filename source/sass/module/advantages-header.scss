@@ -1,3 +1,11 @@
+@import 'variables.scss';
+
+.advantages-header {
+  @media (min-width: $tablet) {
+    width: 551px;
+  }
+}
+
 .advantages-header__title {
   font-family: "PT Sans ", sans-serif;
   font-style: normal;
@@ -7,6 +15,11 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages-header__text {
