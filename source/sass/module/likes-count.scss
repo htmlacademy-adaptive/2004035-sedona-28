@@ -1,0 +1,29 @@
+.likes-count {
+  padding: 5px 0 0 37px;
+  width: fit-content;
+  // background-color: rgba(rgb(0, 0, 0), .3);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-color: rgba(rgb(0, 0, 0), 0.3);
+    mask-image: url("../../img/svg/like.svg");
+    mask-repeat: no-repeat;
+  }
+}
+
+.likes-count__count {
+  font-family: "PT Sans ", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+  width: fit-content;
+}

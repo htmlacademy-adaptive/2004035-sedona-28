@@ -1,0 +1,36 @@
+.video-block {
+  width: 280px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 17px;
+}
+
+.video-block__text-wrapper {
+  width: 266px;
+  margin: 0 auto;
+}
+
+.video-block__title {
+  font-family: "PT Sans ", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.video-block__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}

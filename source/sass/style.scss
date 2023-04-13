@@ -15,6 +15,14 @@
 @use './module/addition.scss';
 @use './module/interested.scss';
 @use './module/map.scss';
+// Main-catalog
+@use './module/gallery.scss';
+@use './module/gallery-text.scss';
+@use './module/gallery-list.scss';
+@use './module/gallery-item.scss';
+@use './module/likes-count.scss';
+@use './module/video-block.scss';
+@use './module/video.scss';
 // Footer
 @use './module/footer.scss';
 @use './module/social-list.scss';
