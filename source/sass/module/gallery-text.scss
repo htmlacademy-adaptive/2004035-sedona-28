@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .gallery-text__title {
   font-family: "PT Sans ", sans-serif;
   font-style: normal;
@@ -6,6 +8,14 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .gallery-text__text {
@@ -16,4 +26,5 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }

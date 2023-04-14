@@ -1,7 +1,8 @@
+@import 'variables.scss';
+
 .likes-count {
   padding: 5px 0 0 37px;
   width: fit-content;
-  // background-color: rgba(rgb(0, 0, 0), .3);
   position: relative;
 
   &::after {
@@ -11,9 +12,19 @@
     left: 0;
     width: 23px;
     height: 21px;
-    background-color: rgba(rgb(0, 0, 0), 0.3);
+    background-color: rgba(0, 0, 0, .3);
     mask-image: url("../../img/svg/like.svg");
     mask-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 4px 0 0 32px;
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -26,4 +37,8 @@
   color: #000000;
   margin: 0;
   width: fit-content;
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
 }

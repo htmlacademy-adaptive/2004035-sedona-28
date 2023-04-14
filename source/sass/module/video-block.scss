@@ -1,13 +1,31 @@
+@import 'variables.scss';
+
 .video-block {
   width: 280px;
   background-color: #ffffff;
   margin: 0 auto;
   margin-top: 17px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    margin-top: 58px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+    margin-top: 67px;
+    margin-bottom: 84px;
+  }
 }
 
 .video-block__text-wrapper {
   width: 266px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 445px;
+  }
 }
 
 .video-block__title {
@@ -21,6 +39,12 @@
   text-align: center;
   margin: 0;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video-block__text {

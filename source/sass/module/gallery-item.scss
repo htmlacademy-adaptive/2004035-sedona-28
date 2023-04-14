@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .gallery-item {
   padding: 24px 0 25px;
   background-color: #ffffff;
@@ -31,12 +33,71 @@
       display: block;
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    padding: 0;
+
+    &--big-post {
+      width: 100%;
+      grid-column: 1/-1;
+      grid-row: 1/3;
+    }
+
+    &::after {
+      display: none;
+    }
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    width: 400px;
+
+    &--big-post {
+      width: 100%;
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+  }
 }
 
 .gallery-item__photo {
   display: block;
   width: 100%;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+
+    &--big-photo {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+.gallery-item__wrapper {
+  @media (min-width: $tablet) {
+    background-color: #f2f2f2;
+    padding: 22px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+  }
 }
 
 .gallery-item__title {
@@ -49,6 +110,15 @@
   margin: 0;
   color: #000000;
   margin-bottom: 1px;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
 }
 
 .gallery-item__author {
@@ -59,8 +129,16 @@
   line-height: 21px;
   margin: 0;
   color: #333333;
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
 }
 
 .gallery-item__likes-count {
   margin-top: 11px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

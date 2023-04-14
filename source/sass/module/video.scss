@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .video {
   margin-top: 38px;
   position: relative;
@@ -13,6 +15,10 @@
     background-color: rgb(255, 255, 255);
     mask-image: url(../../img/svg/polygon.svg);
     mask-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 90px;
   }
 }
 
