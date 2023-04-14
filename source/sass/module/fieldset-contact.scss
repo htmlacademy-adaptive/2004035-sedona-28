@@ -1,5 +1,11 @@
+@import 'variables.scss';
+
 .fieldset-contact {
   padding-bottom: 34px;
+
+  @media (min-width: $desktop) {
+    width: 402px;
+  }
 }
 
 .fieldset-contact__label {
@@ -12,7 +18,7 @@
     left: 0;
     width: 58px;
     height: 58px;
-    transform: translate(206px);
+    transform: translate(328px);
     background-color: #e6e6e6;
     background-size: 18px 18px;
     background-position: center;
@@ -34,4 +40,8 @@
 .fieldset-contact__input {
   box-sizing: border-box;
   width: 222px;
+
+  @media (min-width: $desktop) {
+    width: 344px;
+  }
 }

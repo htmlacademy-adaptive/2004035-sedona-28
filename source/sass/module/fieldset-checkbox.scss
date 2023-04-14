@@ -13,6 +13,20 @@
       justify-content: center;
     }
   }
+  @media (min-width: $desktop) {
+    width: 960px;
+    padding-bottom: 28px;
+
+    & .fieldset__wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 64px;
+    }
+  }
+}
+
+.fieldset-checkbox__title {
+  margin-bottom: 59px;
 }
 
 .fieldset-checkbox__title-wrapper {

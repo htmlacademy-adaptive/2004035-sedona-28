@@ -26,6 +26,9 @@
       display: none;
     }
   }
+  @media (min-width: $desktop) {
+    padding: 28px 0 0px;
+  }
 }
 
 .fieldset__wrapper {
