@@ -1,0 +1,28 @@
+.input {
+  margin: 0;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PT Sans ", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, .3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline-offset: -4px;
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: #e5e5e5;
+  }
+}
