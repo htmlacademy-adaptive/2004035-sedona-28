@@ -16,4 +16,33 @@
     font-size: 21px;
     line-height: 26px;
   }
+
+  &--with-line {
+    @media (min-width: $tablet) {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
 }
