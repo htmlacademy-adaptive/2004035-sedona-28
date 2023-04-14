@@ -1,9 +1,19 @@
+@import 'variables.scss';
+
 .fieldset-comments {
   padding-bottom: 56px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .fieldset-comments__input {
   width: 280px;
   box-sizing: border-box;
   resize: none;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }

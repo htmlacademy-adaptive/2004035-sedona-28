@@ -1,3 +1,24 @@
+@import 'variables.scss';
+
 .fieldset-checkbox {
   padding-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    width: 684px;
+
+    & .fieldset__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 224px);
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+}
+
+.fieldset-checkbox__title {
+  @media (min-width: $tablet) {
+    width: 308px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -1,15 +1,47 @@
+@import 'variables.scss';
+
 .form {
   margin-top: 36px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    margin: 64px auto;
+
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%) rotate(90deg);
+      width: 337px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 .form__text-wrapper {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    width: 436px;
+    margin-bottom: 108px;
+  }
 }
 
 .form__title {
-  font-family: "PT Sans ", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -18,10 +50,16 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -29,11 +67,22 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 436px;
+  }
 }
 
 .form__submit {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .form__submit > .button {
@@ -41,7 +90,7 @@
 }
 
 .form__suggestion {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
