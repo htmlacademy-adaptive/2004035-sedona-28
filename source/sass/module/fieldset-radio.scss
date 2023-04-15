@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .fieldset-radio {
   padding-bottom: 24px;
@@ -13,6 +13,7 @@
       justify-content: center;
     }
   }
+
   @media (min-width: $desktop) {
     width: 960px;
     padding-bottom: 28px;

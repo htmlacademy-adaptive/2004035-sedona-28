@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .gallery-item {
   padding: 24px 0 25px;
@@ -47,6 +47,7 @@
     &::after {
       display: none;
     }
+
     &:last-child {
       &::before {
         display: none;
@@ -96,7 +97,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 

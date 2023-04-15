@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .video {
   margin-top: 38px;
@@ -13,7 +13,7 @@
     height: 54px;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
-    mask-image: url(../../img/svg/polygon.svg);
+    mask-image: url("../../img/svg/polygon.svg");
     mask-repeat: no-repeat;
   }
 

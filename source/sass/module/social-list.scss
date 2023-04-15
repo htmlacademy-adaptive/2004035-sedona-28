@@ -1,5 +1,5 @@
-@import 'mixins.scss';
-@import 'variables.scss';
+@import "mixins.scss";
+@import "variables.scss";
 
 .social-list {
   @include reset-list;
@@ -19,9 +19,11 @@
   &:hover {
     background-color: $main-blue-color-hover;
   }
+
   &:focus-within {
     background-color: $main-blue-color-hover;
   }
+
   &:active {
     background-color: $main-blue-color-down;
   }
@@ -40,14 +42,16 @@
   &--vk {
     mask-image: url("../../img/svg/vk.svg");
   }
+
   &--telegram {
     mask-image: url("../../img/svg/telegram.svg");
   }
+
   &--youtube {
     mask-image: url("../../img/svg/youtube.svg");
   }
 
   &:active {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }

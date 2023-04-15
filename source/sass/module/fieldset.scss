@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .fieldset {
   margin: 0 auto;
@@ -26,8 +26,9 @@
       display: none;
     }
   }
+
   @media (min-width: $desktop) {
-    padding: 28px 0 0px;
+    padding: 28px 0 0;
   }
 }
 

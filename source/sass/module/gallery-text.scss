@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .gallery-text__title {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -19,7 +19,7 @@
 }
 
 .gallery-text__text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

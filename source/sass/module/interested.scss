@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 
 .interested {
   padding: 38px 0 49px;
@@ -7,6 +7,7 @@
     width: 458px;
     padding: 60px 0 55px;
   }
+
   @media (min-width: $desktop) {
     padding-bottom: 66px;
   }
@@ -28,6 +29,7 @@
     line-height: 26px;
     margin-bottom: 30px;
   }
+
   @media (min-width: $desktop) {
     font-size: 30px;
     line-height: 30px;

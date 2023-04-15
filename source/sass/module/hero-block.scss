@@ -1,17 +1,17 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .hero-block {
   position: relative;
   height: 389px;
-  background-image: url(../../img/intro-triangle.svg), url(../../img/back-desktop.jpg);
+  background-image: url("../../img/intro-triangle.svg"), url("../../img/back-desktop.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom -0.2px, center;
   background-size: auto, cover;
-  position: relative;
 
   @media (min-width: $tablet) {
     height: 518px;
   }
+
   @media (min-width: $desktop) {
     background-size: contain, cover;
   }
@@ -25,6 +25,7 @@
       height: 290px;
       background-size: auto, auto;
     }
+
     @media (min-width: $desktop) {
       height: 301px;
       background-size: contain, cover;
@@ -44,16 +45,17 @@
   }
 
   &--not-index {
-    width:229px;
+    width: 229px;
     height: 39px;
-    object-fit:cover;
+    object-fit: cover;
 
     @media (min-width: $tablet) {
-      width:457px;
+      width: 457px;
       height: 78px;
     }
+
     @media (min-width: $desktop) {
-      width:460px;
+      width: 460px;
       height: 80px;
     }
 

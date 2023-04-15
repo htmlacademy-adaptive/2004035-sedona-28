@@ -1,5 +1,5 @@
-@import 'mixins.scss';
-@import 'variables.scss';
+@import "mixins.scss";
+@import "variables.scss";
 
 .navigation {
   background-color: #ffffff;
@@ -53,19 +53,21 @@
   padding: 17px 0 12px;
   width: 100%;
   mix-blend-mode: normal;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (max-width: $tablet) {
     &:hover {
       background-color: $main-blue-color-hover;
     }
+
     &:active {
       background-color: $main-blue-color-down;
 
       & > .navigation__link {
-        color: rgba(255, 255, 255, .3);
+        color: rgba(255, 255, 255, 0.3);
       }
     }
+
     &:focus-within {
       background-color: $main-blue-color-hover;
 
@@ -101,11 +103,11 @@
   align-items: center;
 
   &--current {
-    color: rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, 0.1);
   }
 
   &:active {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: $tablet) {
@@ -116,6 +118,7 @@
     &:hover {
       color: #81b3d2;
     }
+
     &:focus {
       outline: none;
       color: #81b3d2;

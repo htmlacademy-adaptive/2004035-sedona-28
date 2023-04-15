@@ -17,6 +17,7 @@
   &:hover {
     background-color: #e5e5e5;
   }
+
   &:active {
     background-color: #d5d5d5;
   }
@@ -47,6 +48,7 @@
   &:hover {
     background-color: #e5e5e5;
   }
+
   &:active {
     background-color: #d5d5d5;
   }
@@ -79,6 +81,7 @@
   &:active > .control__mark {
     background-color: #d5d5d5;
   }
+
   &:active .control__input:checked + .control__mark {
     &::after {
       background: rgba(51, 51, 51, 0.3);

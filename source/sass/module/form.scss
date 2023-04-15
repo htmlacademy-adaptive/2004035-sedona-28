@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .form {
   margin-top: 36px;
@@ -7,6 +7,7 @@
     width: 648px;
     margin: 64px auto;
   }
+
   @media (min-width: $desktop) {
     width: 960px;
     margin: 115px auto 64px;
@@ -30,6 +31,7 @@
       background-color: #e5e5e5;
     }
   }
+
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 430px 402px;
@@ -67,6 +69,7 @@
     line-height: 26px;
     margin-bottom: 20px;
   }
+
   @media (min-width: $desktop) {
     margin-bottom: 31px;
   }
@@ -97,6 +100,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   @media (min-width: $desktop) {
     width: 768px;
   }
@@ -106,6 +110,7 @@
   @media (min-width: $tablet) {
     padding: 16px 71px;
   }
+
   @media (min-width: $desktop) {
     padding: 16px 101px;
   }
@@ -126,6 +131,7 @@
     font-size: 14px;
     line-height: 21px;
   }
+
   @media (min-width: $desktop) {
     margin: 0;
   }

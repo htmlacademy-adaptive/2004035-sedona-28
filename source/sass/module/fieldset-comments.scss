@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .fieldset-comments {
   padding-bottom: 56px;
@@ -6,6 +6,7 @@
   @media (min-width: $tablet) {
     width: 100%;
   }
+
   @media (min-width: $desktop) {
     padding-bottom: 48px;
   }
@@ -19,6 +20,7 @@
   @media (min-width: $tablet) {
     width: 100%;
   }
+
   @media (min-width: $desktop) {
     width: 768px;
     height: 160px;
