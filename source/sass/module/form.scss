@@ -103,7 +103,12 @@
 }
 
 .form__submit > .button {
-  padding: 16px 32.5px;
+  @media (min-width: $tablet) {
+    padding: 16px 71px;
+  }
+  @media (min-width: $desktop) {
+    padding: 16px 101px;
+  }
 }
 
 .form__suggestion {

@@ -14,15 +14,21 @@
   &::after {
     content: "";
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: 0;
     width: 58px;
     height: 58px;
-    transform: translate(328px);
+    transform: translate(206px);
     background-color: #e6e6e6;
     background-size: 18px 18px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      transform: translate(328px);
+    }
   }
 
   &--phone {

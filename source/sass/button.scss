@@ -10,7 +10,7 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 16px 36.5px;
+  padding: 16px 49px;
   text-align: center;
   background-color: $main-blue-color;
   margin: 0;
@@ -20,6 +20,11 @@
     background-color: $main-blue-color-hover;
   }
   &:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: $main-blue-color-down;
+  }
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
   }
 }

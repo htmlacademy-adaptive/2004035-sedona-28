@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page">
+  <body class="page nojs">
 
-    <header class="header">
+    <header class="header nojs__header">
       <a class="logo-city-link" href="./index.html">
         <img class="logo-city-link__img" src="./img/logo-city.svg" width="185" height="96" alt="Логотип города">
       </a>
 
       <nav class="navigation">
-        <button class="navigation__button  navigation__button--close" type="button">
-          <span class="visually-hidden">Открыть меню/закрыть меню</span>
-        </button>
-        <ul class="navigation__list navigation__list--close">
+
+        <label class="navigation__button navigation-button nojs__navigation-button">
+          <input class="navigation-button__input visually-hidden" type="checkbox" name="menu-button">
+          <span class="navigation-button__mark"></span>
+          <span class="navigation-button__label visually-hidden">Открыть/закрыть меню</span>
+        </label>
+
+        <ul class="navigation__list navigation__list--close nojs__navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -180,5 +184,6 @@
       </div>
     </footer>
 
+    <script src="./js/script.js"></script>
   </body>
 </html>

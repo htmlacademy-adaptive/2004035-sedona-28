@@ -15,7 +15,38 @@
   text-decoration: none;
   color: #000000;
   padding: 7px 40px 7px 0;
-  background-position: top right -5px;
-  background-repeat: no-repeat;
-  background-image: url('../../img/htmlacademy.svg');
+  background-color: #ffffff;
+  // mask-image: url('../../img/htmlacademy.svg');
+  // mask-position: top right -5px;
+  // mask-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 35px;
+    background-color: #000000;
+    mask-image: url('../../img/htmlacademy.svg');
+    mask-position: top -1px right -5px;
+    mask-repeat: no-repeat;
+    mask-size: 135%;
+  }
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+
+    &::after {
+      background-color: rgba(129, 179, 210, 1);
+    }
+  }
+  &:active {
+    color: rgba(179, 179, 179, 1);
+
+    &::after {
+      background-color: rgba(179, 179, 179, 1);
+    }
+  }
 }
