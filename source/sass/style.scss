@@ -4,6 +4,10 @@
 @use './module/view-box.scss';
 @use './module/button.scss';
 @use './module/page.scss';
+// Modal
+@use './module/modal-open.scss';
+@use './module/modal-fail.scss';
+@use './module/modal-success.scss';
 // Header
 @use './module/header.scss';
 @use './module/logo-city-link.scss';
