@@ -49,4 +49,12 @@
       background-color: rgba(179, 179, 179, 1);
     }
   }
+  &:focus-within {
+    outline: none;
+    color: rgba(129, 179, 210, 1);
+
+    &::after {
+      background-color: rgba(129, 179, 210, 1);
+    }
+  }
 }

@@ -1,8 +1,8 @@
 @use './fonts.scss';
 @use './visually-hidden.scss';
-@use './container.scss';
-@use './view-box.scss';
-@use './button.scss';
+@use './module/container.scss';
+@use './module/view-box.scss';
+@use './module/button.scss';
 @use './module/page.scss';
 // Header
 @use './module/header.scss';
