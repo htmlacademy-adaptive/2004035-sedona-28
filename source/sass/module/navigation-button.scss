@@ -1,0 +1,28 @@
+@import 'variables.scss';
+
+.navigation-button__mark {
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: $main-blue-color;
+  mask-image: url("../../img/open-menu.svg");
+  // position: relative;
+
+  &:hover {
+    background-color: $main-blue-color-hover;
+  }
+  &:active {
+    background-color: $main-blue-color-down;
+  }
+}
+
+.navigation-button__input:checked + .navigation-button__mark {
+  background-color: tomato;
+  mask-image: url("../../img/close-menu.svg");
+}
+
+.navigation-button__input:checked > .navigation__list {
+  display: block;
+}
+
+// navigation-button__mark--close
