@@ -45,5 +45,15 @@
         background-color: #dbdbdb;
       }
     }
+
+    @media (min-width: $desktop) {
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
   }
 }
