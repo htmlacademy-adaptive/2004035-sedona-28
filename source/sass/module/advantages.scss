@@ -92,26 +92,31 @@
     }
   }
 
-  &--wrapper {
-    padding: 54px 0 40px;
-
-    @media (min-width: $tablet) {
-      padding: 41px 33px 0;
-
-      &-first {
-        grid-column: 1/2;
-      }
-      &-second {
-        background-color: $main-blue-color;
-        grid-column: 3/4;
-      }
-    }
-  }
   &--small-wrapper {
     padding: 24px 0;
 
     @media (min-width: $tablet) {
       padding: 41px 33px 72px;
+    }
+  }
+}
+
+.advantages__item-wrapper {
+  padding: 54px 0 40px;
+
+  @media (min-width: $tablet) {
+    padding: 41px 33px 0;
+  }
+
+  &--first {
+    @media (min-width: $tablet) {
+      grid-column: 1/2;
+    }
+  }
+  &--second {
+    @media (min-width: $tablet) {
+      background-color: $main-blue-color;
+      grid-column: 3/4;
     }
   }
 }
