@@ -1,47 +1,57 @@
-@import "variables.scss";
-
 .hero-block {
   position: relative;
-  height: 389px;
+  box-sizing: border-box;
   background-image: url("../../img/intro-triangle.svg"), url("../../img/back-desktop.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom -0.2px, center;
   background-size: auto, cover;
+  padding: 90px 19px 85px;
+  color: #ffffff;
 
   @media (min-width: $tablet) {
-    height: 518px;
+    padding: 77px 100px 91px;
   }
 
   @media (min-width: $desktop) {
     background-size: contain, cover;
+    padding: 78px 200px 90px;
   }
 
   &--not-index {
     height: 158px;
     background-size: auto, 285%;
     background-position: center bottom -0.2px, right 50% bottom 5%;
+    padding: 52px 45px 76px;
 
     @media (min-width: $tablet) {
       height: 290px;
       background-size: auto, auto;
+      padding: 95px 154px 117.4px;
     }
 
     @media (min-width: $desktop) {
       height: 301px;
       background-size: contain, cover;
+      padding: 111px 250px 105.2px;
     }
+  }
+
+  &:only-child:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
 .hero-block__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
   @media (min-width: $tablet) {
+    display: block;
     width: 461px;
     height: 349.97px;
+    margin: 0 auto;
   }
 
   &--not-index {
@@ -58,18 +68,5 @@
       width: 460px;
       height: 80px;
     }
-
-    // &::after {
-    //   content: "abc";
-    //   display: block;
-    //   width: 229px;
-    //   height: 39px;
-    //   background-color: tomato;
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%);
-    //   z-index: 4;
-    // }
   }
 }

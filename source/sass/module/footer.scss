@@ -1,12 +1,19 @@
-@import "variables.scss";
-
 .footer {
-  padding: 33px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 33px 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
+
+  &> *:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 264px 1fr;
+    align-items: center;
     box-sizing: border-box;
     padding: 36px 60px;
     justify-content: space-between;
@@ -22,20 +29,33 @@
 }
 
 .footer__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 124%;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 
-.footer__social {
-  margin: 30px 0;
+.footer__social-list {
+  margin: 0;
 
   @media (min-width: $tablet) {
-    margin: 0;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+}
+
+.footer__develop {
+  width: auto;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin-left: auto;
   }
 }

@@ -3,23 +3,21 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .develop__link {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   padding: 7px 40px 7px 0;
   background-color: #ffffff;
-  // mask-image: url("../../img/htmlacademy.svg");
-  // mask-position: top right -5px;
-  // mask-repeat: no-repeat;
   position: relative;
+  width: fit-content;
 
   &::after {
     content: "";
@@ -29,6 +27,7 @@
     width: 28px;
     height: 35px;
     background-color: #000000;
+    color: #ffffff;
     mask-image: url("../../img/htmlacademy.svg");
     mask-position: top -1px right -5px;
     mask-repeat: no-repeat;
@@ -48,15 +47,6 @@
 
     &::after {
       background-color: rgba(179, 179, 179, 1);
-    }
-  }
-
-  &:focus-within {
-    outline: none;
-    color: rgba(129, 179, 210, 1);
-
-    &::after {
-      background-color: rgba(129, 179, 210, 1);
     }
   }
 }

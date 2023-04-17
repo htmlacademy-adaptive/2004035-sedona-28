@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 .video {
   margin-top: 38px;
   position: relative;
@@ -18,7 +16,7 @@
   }
 
   @media (min-width: $tablet) {
-    margin-top: 90px;
+    margin: 0;
   }
 }
 

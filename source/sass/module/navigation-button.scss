@@ -1,39 +1,61 @@
-@import "variables.scss";
+// .navigation-button__mark {
+//   display: block;
+//   width: 23px;
+//   height: 22px;
+//   background-color: $main-color;
+//   mask-image: url("../../img/open-menu.svg");
 
-.navigation-button__mark {
-  display: block;
-  width: 23px;
-  height: 22px;
-  background-color: $main-blue-color;
+//   &:hover {
+//     background-color: $main-color-hover;
+//   }
+
+//   &:active {
+//     background-color: $main-color-down;
+//   }
+// }
+
+// .navigation-button__input:checked + .navigation-button__mark {
+//   background-color: #ffffff;
+//   mask-image: url("../../img/close-menu.svg");
+
+//   &:hover {
+//     background-color: rgba(255, 255, 255, 0.6);
+//   }
+
+//   &:active {
+//     background-color: rgba(255, 255, 255, 0.3);
+//   }
+// }
+
+// .navigation-button__input:focus + .navigation-button__mark {
+//   background-color: $main-color-hover;
+// }
+
+// .navigation-button__input:checked:focus + .navigation-button__mark {
+//   background-color: rgba(255, 255, 255, 0.6);
+// }
+
+.navigation-button {
+  border: none;
+  padding: 0;
+  background-color: $main-color;
   mask-image: url("../../img/open-menu.svg");
-  // position: relative;
+  mask-repeat: no-repeat;
 
   &:hover {
-    background-color: $main-blue-color-hover;
+    background-color: $main-color-hover;
   }
 
   &:active {
-    background-color: $main-blue-color-down;
-  }
-}
-
-.navigation-button__input:checked + .navigation-button__mark {
-  background-color: #ffffff;
-  mask-image: url("../../img/close-menu.svg");
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: $main-color-down;
   }
 
-  &:active {
-    background-color: rgba(255, 255, 255, 0.3);
+  &:focus-within {
+    background-color: #ffffff;
+    mask-image: url("../../img/close-menu.svg");
   }
-}
 
-.navigation-button__input:focus + .navigation-button__mark {
-  background-color: $main-blue-color-hover;
-}
-
-.navigation-button__input:checked:focus + .navigation-button__mark {
-  background-color: rgba(255, 255, 255, 0.6);
+  &:focus-within + .navigation__list{
+    display: block;
+  }
 }

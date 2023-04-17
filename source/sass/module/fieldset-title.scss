@@ -1,11 +1,7 @@
-@import "variables.scss";
-
 .fieldset-title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 144%;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -14,7 +10,7 @@
   @media (min-width: $tablet) {
     margin-bottom: 28px;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 124%;
   }
 
   &--with-line {

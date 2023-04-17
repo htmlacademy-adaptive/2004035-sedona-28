@@ -1,5 +1,7 @@
 .header {
   position: relative;
   background-color: #ffffff;
-  height: 56px;
+  min-height: 56px;
+  // flex-grow: 0;
+  // flex-shrink: 0;
 }

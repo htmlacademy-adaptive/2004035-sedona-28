@@ -1,11 +1,10 @@
-@import "../variables";
-
 .interested {
+  background-color: #ffffff;
+  color: #000000;
   padding: 38px 0 49px;
 
   @media (min-width: $tablet) {
-    width: 458px;
-    padding: 60px 0 55px;
+    padding: 60px 100px 55px;
   }
 
   @media (min-width: $desktop) {
@@ -14,11 +13,9 @@
 }
 
 .interested__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 124%;
   color: #000000;
   text-transform: uppercase;
   margin: 0 0 20px 0;
@@ -26,22 +23,18 @@
 
   @media (min-width: $tablet) {
     font-size: 30px;
-    line-height: 26px;
+    line-height: 87%;
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop) {
-    font-size: 30px;
-    line-height: 30px;
+    line-height: 100%;
   }
 }
 
 .interested__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   color: #333333;
   text-transform: uppercase;
   margin: 0;
@@ -57,6 +50,9 @@
   margin-top: 32px;
 
   @media (min-width: $tablet) {
+    width: 458px;
+    box-sizing: border-box;
+    margin: 0 auto;
     margin-top: 46px;
   }
 }

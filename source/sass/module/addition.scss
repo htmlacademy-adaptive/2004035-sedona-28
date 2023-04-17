@@ -1,7 +1,6 @@
-@import "variables.scss";
-
 .addition {
   background-color: #ffffff;
+  color: #000000;
 }
 
 .addition__item {
@@ -9,6 +8,8 @@
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 40px 40px;
+  background-color: #ffffff;
+  color: #000000;
 
   &--house {
     background-image: url("../../img/svg/house.svg");
@@ -39,28 +40,22 @@
 }
 
 .addition__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 144%;
   color: #000000;
   text-transform: uppercase;
   margin: 0 0 16px 0;
 
   @media (min-width: $tablet) {
     font-size: 21px;
-    line-height: 26px;
     text-align: center;
   }
 }
 
 .addition__icon-text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   color: #333333;
   text-transform: uppercase;
   margin: 0;

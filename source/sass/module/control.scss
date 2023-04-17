@@ -1,9 +1,7 @@
 .control__label {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 144%;
 }
 
 .control__mark--radio {
@@ -70,8 +68,6 @@
     background-size: 22px 16px;
   }
 }
-
-// background: rgba(51, 51, 51, 0.3);
 
 .control {
   &:focus-within > .control__mark {

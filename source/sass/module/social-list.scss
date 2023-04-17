@@ -1,31 +1,31 @@
-@import "mixins.scss";
-@import "variables.scss";
-
 .social-list {
-  @include reset-list;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-list__item {
   width: 48px;
   height: 48px;
-  background-color: $main-blue-color;
+  background-color: $main-color;
 
-  &:nth-child(2) {
-    margin: 0 6px;
+  &:not(:last-child) {
+    margin-right: 6px;
   }
 
   &:hover {
-    background-color: $main-blue-color-hover;
+    background-color: $main-color-hover;
   }
 
   &:focus-within {
-    background-color: $main-blue-color-hover;
+    background-color: $main-color-hover;
   }
 
   &:active {
-    background-color: $main-blue-color-down;
+    background-color: $main-color-down;
   }
 }
 

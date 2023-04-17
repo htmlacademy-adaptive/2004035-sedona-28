@@ -1,6 +1,3 @@
-@import "mixins.scss";
-@import "variables.scss";
-
 .navigation {
   background-color: #ffffff;
   position: relative;
@@ -22,7 +19,7 @@
 
 .navigation__list {
   @include reset-list;
-  background-color: $main-blue-color;
+  background-color: $main-color;
   position: relative;
   z-index: 1;
   display: none;
@@ -49,7 +46,7 @@
 }
 
 .navigation__item {
-  background-color: $main-blue-color;
+  background-color: $main-color;
   padding: 17px 0 12px;
   width: 100%;
   mix-blend-mode: normal;
@@ -57,11 +54,11 @@
 
   @media (max-width: $tablet) {
     &:hover {
-      background-color: $main-blue-color-hover;
+      background-color: $main-color-hover;
     }
 
     &:active {
-      background-color: $main-blue-color-down;
+      background-color: $main-color-down;
 
       & > .navigation__link {
         color: rgba(255, 255, 255, 0.3);
@@ -69,7 +66,7 @@
     }
 
     &:focus-within {
-      background-color: $main-blue-color-hover;
+      background-color: $main-color-hover;
 
       & > .navigation__link {
         outline: none;
@@ -89,11 +86,9 @@
 }
 
 .navigation__link {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 144%;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -102,17 +97,13 @@
   flex-direction: column;
   align-items: center;
 
-  &--current {
-    color: rgba(255, 255, 255, 0.1);
-  }
-
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: $tablet) {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 150%;
     color: #000000;
 
     &:hover {
@@ -125,7 +116,7 @@
     }
 
     &--current {
-      color: $menu-link-color-current;
+      color: #766357;
     }
   }
 }

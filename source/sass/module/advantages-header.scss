@@ -1,33 +1,32 @@
-@import "variables.scss";
-
 .advantages-header {
   @media (min-width: $tablet) {
-    width: 551px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
 .advantages-header__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 144%;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
 
+  @media (min-width: $tablet) {
+    width: 483px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop) {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 124%;
   }
 }
 
 .advantages-header__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   text-transform: uppercase;
   margin: 35px 0 0;
   text-align: center;

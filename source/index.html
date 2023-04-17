@@ -8,37 +8,41 @@
   </head>
   <body class="page nojs">
 
-    <header class="header nojs__header">
+    <header class="header nojs__header container">
       <a class="logo-city-link" href="#">
         <img class="logo-city-link__img" src="./img/logo-city.svg" width="185" height="96" alt="Логотип города">
       </a>
 
       <nav class="navigation">
 
-        <label class="navigation__button navigation-button nojs__navigation-button">
+        <!-- <label class="navigation__button navigation-button nojs__navigation-button">
           <input class="navigation-button__input visually-hidden" type="checkbox" name="menu-button">
           <span class="navigation-button__mark"></span>
           <span class="navigation-button__label visually-hidden">Открыть/закрыть меню</span>
-        </label>
+        </label> -->
 
-        <ul class="navigation__list navigation__list--close nojs__navigation__list">
+        <button class="navigation__button navigation-button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+
+        <ul class="navigation__list nojs__navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link--current" href="index.html" tabindex="1">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html" tabindex="1">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма Отзыва</a>
+            <a class="navigation__link" href="form.html" tabindex="1">Форма Отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">html academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" tabindex="1">html academy</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main main--index">
+    <main class="main main--index container">
       <header class="hero-block">
         <img class="hero-block__text" src="./img/text-index.svg" alt="Welcome to the gorgeous Sedona. 'Because the Grand Canyon lucky!'">
       </header>
@@ -121,27 +125,25 @@
       </footer>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__text" href="https://www.google.com/search?q=sedona&rlz=1C5CHFA_enTR1018TR1019&oq=vi&aqs=chrome.0.35i19i39j69i57j35i39j0i433i512l2j0i131i433i512j46i131i175i199i433i512j0i512l3.961j0j15&sourceid=chrome&ie=UTF-8" target="_blank">&#35;visitSEDONA</a>
-      <div class="footer__social">
-        <ul class="footer__social-list social-list">
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link--vk">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link--telegram">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link--youtube">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__social-list social-list">
+        <li class="social-list__item">
+          <a href="" class="social-list__link social-list__link--vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link social-list__link--telegram">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link social-list__link--youtube">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
       <div class="footer__develop develop">
         <a class="develop__link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
