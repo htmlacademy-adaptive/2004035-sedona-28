@@ -12,3 +12,13 @@
 //   width: 100%;
 //   display: block;
 // }
+
+
+.nojs__navigation:focus-within > .nojs__navigation-button {
+  background-color: #ffffff;
+  mask-image: url("../../img/close-menu.svg");
+}
+
+.nojs__navigation:focus-within > .nojs__navigation-list {
+  display: block;
+}

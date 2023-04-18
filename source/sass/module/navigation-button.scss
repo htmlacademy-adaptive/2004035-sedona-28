@@ -1,43 +1,7 @@
-// .navigation-button__mark {
-//   display: block;
-//   width: 23px;
-//   height: 22px;
-//   background-color: $main-color;
-//   mask-image: url("../../img/open-menu.svg");
-
-//   &:hover {
-//     background-color: $main-color-hover;
-//   }
-
-//   &:active {
-//     background-color: $main-color-down;
-//   }
-// }
-
-// .navigation-button__input:checked + .navigation-button__mark {
-//   background-color: #ffffff;
-//   mask-image: url("../../img/close-menu.svg");
-
-//   &:hover {
-//     background-color: rgba(255, 255, 255, 0.6);
-//   }
-
-//   &:active {
-//     background-color: rgba(255, 255, 255, 0.3);
-//   }
-// }
-
-// .navigation-button__input:focus + .navigation-button__mark {
-//   background-color: $main-color-hover;
-// }
-
-// .navigation-button__input:checked:focus + .navigation-button__mark {
-//   background-color: rgba(255, 255, 255, 0.6);
-// }
-
 .navigation-button {
   border: none;
   padding: 0;
+  display: block;
   background-color: $main-color;
   mask-image: url("../../img/open-menu.svg");
   mask-repeat: no-repeat;
@@ -50,12 +14,12 @@
     background-color: $main-color-down;
   }
 
-  &:focus-within {
+  &--open {
     background-color: #ffffff;
     mask-image: url("../../img/close-menu.svg");
   }
 
-  &:focus-within + .navigation__list{
-    display: block;
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
