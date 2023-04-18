@@ -6,8 +6,12 @@
   color: #000000;
   box-sizing: border-box;
 
-  &> *:not(:last-child) {
+  & > *:not(:last-child) {
     margin-bottom: 30px;
+
+    @media (min-width: $desktop) {
+      margin: 0;
+    }
   }
 
   @media (min-width: $tablet) {
