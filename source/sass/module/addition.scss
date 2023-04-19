@@ -37,6 +37,11 @@
       margin: 0;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding: 166px 33px 71px;
+    background-position: center 65px, center;
+  }
 }
 
 .addition__title {

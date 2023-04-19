@@ -115,6 +115,10 @@
     @media (min-width: $tablet) {
       padding: 41px 33px 72px;
     }
+
+    @media (min-width: $desktop) {
+      padding: 52px 33px 53px;
+    }
   }
 }
 
