@@ -7,7 +7,7 @@
   box-sizing: border-box;
 
   & > *:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     @media (min-width: $tablet) {
       margin: 0;
@@ -19,14 +19,14 @@
     grid-template-columns: 1fr 264px 1fr;
     align-items: center;
     box-sizing: border-box;
-    padding: 32px 60px;
+    padding: 36px 60px;
     justify-content: space-between;
     width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
-    padding: 30px 120px;
+    padding: 36px 120px;
     width: 1200px;
   }
 }

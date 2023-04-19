@@ -1,5 +1,5 @@
 .gallery-item {
-  padding: 24px 0 25px;
+  padding: 24px 0 26px;
   background-color: #ffffff;
   width: 280px;
   position: relative;
@@ -61,6 +61,16 @@
       width: 100%;
       grid-column: 1/-1;
       grid-row: 1/2;
+
+      & .gallery-item__wrapper {
+        padding: 22px 21px 19px;
+      }
+    }
+
+    &--small-post {
+      & .gallery-item__title {
+        margin-bottom: 7px;
+      }
     }
   }
 }
@@ -96,6 +106,7 @@
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    padding: 17px 20px 17px 25px;
   }
 }
 
