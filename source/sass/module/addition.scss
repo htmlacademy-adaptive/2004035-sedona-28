@@ -12,15 +12,15 @@
   color: #000000;
 
   &--house {
-    background-image: url("../../img/sprite.svg#house");
+    background-image: url("../img/sprite.svg#house");
   }
 
   &--food {
-    background-image: url("../../img/sprite.svg#burger");
+    background-image: url("../img/sprite.svg#burger");
   }
 
   &--souvenirs {
-    background-image: url("../../img/sprite.svg#souvenirs");
+    background-image: url("../img/sprite.svg#souvenirs");
   }
 
   &:nth-child(2) {

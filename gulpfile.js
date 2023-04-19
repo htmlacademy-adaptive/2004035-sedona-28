@@ -31,13 +31,23 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(groupCssMediaQueries())
-    // .pipe(gulp.dest('source/css'))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+}
+
+const styleServer = () => {
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -125,7 +135,7 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styleServer));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
@@ -146,5 +156,5 @@ const build = gulp.series(
 gulp.task('build', build)
 
 export default gulp.series(
-  styles, server, watcher
+  styleServer, sprite, server, watcher
 );
