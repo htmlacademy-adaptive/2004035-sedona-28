@@ -4,13 +4,32 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import postimport from 'postcss-import';
+import posturl from 'postcss-url';
+import postsass from 'postcss-sass';
+import notify from 'gulp-notify';
 
 // Styles
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
+    // .pipe(plumber({
+    //   errorHandler: notify.onError(function(err) {
+    //     return {
+    //       title: 'Task styles',
+    //       message: "Error: <%= error.message %>",
+    //       sound: true
+    //     }
+    //   })
+    // }))
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
+    // .pipe(postcss([
+    //   postimport(),
+    //   posturl()
+    // ], {
+    //   syntax: postsass
+    // }))
     .pipe(postcss([
       autoprefixer()
     ]))

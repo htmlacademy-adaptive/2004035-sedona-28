@@ -1,11 +1,11 @@
 .advantages__header {
-  padding: 23px 0;
+  padding: 30px 0;
 
   @media (min-width: $tablet) {
     padding: 47.5px 0 55.5px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding: 59px 0 45px;
   }
 }
@@ -49,10 +49,19 @@
 
     & .advantages__title {
       color: #000000;
+
+      @media (min-width: $tablet) {
+        width: 155px;
+        line-height: 124%;
+      }
     }
 
     & .advantages__text-count {
       color: #333333;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 23px;
+      }
     }
 
     & .advantages__text {
@@ -101,7 +110,7 @@
   }
 
   &--small-wrapper {
-    padding: 24px 0;
+    padding: 21px 0 28px;
 
     @media (min-width: $tablet) {
       padding: 41px 33px 72px;
@@ -113,7 +122,7 @@
   padding: 54px 0 40px;
 
   @media (min-width: $tablet) {
-    padding: 41px 33px 40px;
+    padding: 49px 33px 34px;
   }
 
   &--first {
@@ -123,9 +132,12 @@
   }
 
   &--second {
+    padding-top: 33px;
+
     @media (min-width: $tablet) {
       background-color: $main-color;
       grid-column: 3/4;
+      padding-top: 50px;
     }
   }
 }

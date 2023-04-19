@@ -1,10 +1,10 @@
 .interested {
   background-color: #ffffff;
   color: #000000;
-  padding: 38px 0 49px;
+  padding: 41px 0 49px;
 
   @media (min-width: $tablet) {
-    padding: 60px 100px 55px;
+    padding: 51px 100px 55px;
   }
 
   @media (min-width: $desktop) {
@@ -47,12 +47,12 @@
 }
 
 .interested__link {
-  margin-top: 32px;
+  margin-top: 11px;
 
   @media (min-width: $tablet) {
     width: 458px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 46px;
+    margin-top: 49px;
   }
 }

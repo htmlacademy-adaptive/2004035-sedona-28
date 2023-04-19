@@ -14,6 +14,8 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 124%;
     width: 483px;
     margin: 0 auto;
   }
@@ -30,4 +32,8 @@
   text-transform: uppercase;
   margin: 35px 0 0;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: 29px;
+  }
 }

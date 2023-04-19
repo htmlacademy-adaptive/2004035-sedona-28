@@ -1,5 +1,5 @@
 .footer {
-  padding: 33px 20px;
+  padding: 36px 20px;
   flex-grow: 0;
   flex-shrink: 0;
   background-color: #ffffff;
@@ -9,7 +9,7 @@
   & > *:not(:last-child) {
     margin-bottom: 30px;
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       margin: 0;
     }
   }
@@ -19,9 +19,8 @@
     grid-template-columns: 1fr 264px 1fr;
     align-items: center;
     box-sizing: border-box;
-    padding: 36px 60px;
+    padding: 32px 60px;
     justify-content: space-between;
-    flex-direction: row;
     width: 768px;
     margin: 0 auto;
   }
@@ -60,6 +59,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet) {
+    margin: 0;
     margin-left: auto;
   }
 }
