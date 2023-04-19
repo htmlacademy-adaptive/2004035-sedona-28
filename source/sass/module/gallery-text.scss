@@ -1,0 +1,36 @@
+.gallery-text {
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    padding: 0 50px 87px;
+  }
+}
+
+.gallery-text__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 87%;
+  }
+}
+
+.gallery-text__text {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    width: 438px;
+    margin: 0 auto;
+  }
+}

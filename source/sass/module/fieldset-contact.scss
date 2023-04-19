@@ -1,0 +1,53 @@
+.fieldset-contact {
+  padding-bottom: 34px;
+
+  @media (min-width: $desktop) {
+    width: 402px;
+  }
+}
+
+.fieldset-contact__label {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 58px;
+    height: 58px;
+    transform: translate(206px);
+    background-color: #e6e6e6;
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      transform: translate(328px);
+    }
+  }
+
+  &--phone {
+    &::after {
+      background-image: url("../../img/svg/phone.svg");
+    }
+  }
+
+  &--email {
+    &::after {
+      background-image: url("../../img/svg/email.svg");
+    }
+  }
+}
+
+.fieldset-contact__input {
+  box-sizing: border-box;
+  width: 222px;
+
+  @media (min-width: $desktop) {
+    width: 344px;
+  }
+}

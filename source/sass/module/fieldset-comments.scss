@@ -1,0 +1,27 @@
+.fieldset-comments {
+  padding-bottom: 56px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 48px;
+  }
+}
+
+.fieldset-comments__input {
+  width: 280px;
+  box-sizing: border-box;
+  resize: none;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 768px;
+    height: 160px;
+    margin: 0 96px;
+  }
+}

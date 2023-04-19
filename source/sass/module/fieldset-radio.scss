@@ -1,0 +1,32 @@
+.fieldset-radio {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+
+    & .fieldset__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+    padding-bottom: 28px;
+
+    & .fieldset__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 280px);
+      gap: 28px;
+      justify-content: center;
+    }
+  }
+}
+
+.fieldset-radio__title {
+  @media (min-width: $desktop) {
+    margin-bottom: 45px;
+  }
+}

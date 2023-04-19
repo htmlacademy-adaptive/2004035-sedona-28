@@ -1,0 +1,55 @@
+.fieldset-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 124%;
+  }
+
+  &--with-line {
+    @media (min-width: $tablet) {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+  }
+}

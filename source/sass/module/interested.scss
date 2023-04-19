@@ -1,0 +1,58 @@
+.interested {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 38px 0 49px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 100px 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 66px;
+  }
+}
+
+.interested__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124%;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 87%;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 100%;
+  }
+}
+
+.interested__text {
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 435px;
+    margin: 0 auto;
+  }
+}
+
+.interested__link {
+  margin-top: 32px;
+
+  @media (min-width: $tablet) {
+    width: 458px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 46px;
+  }
+}
