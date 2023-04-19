@@ -3,29 +3,40 @@
 
   @media (min-width: $tablet) {
     width: 648px;
+    padding-bottom: 19px;
 
     & .fieldset__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 224px);
-      gap: 16px;
-      justify-content: center;
+      gap: 16px 31px;
+      justify-content: flex-start;
+      margin-left: 81px;
     }
   }
 
   @media (min-width: $desktop) {
     width: 960px;
-    padding-bottom: 28px;
+    padding-bottom: 59px;
 
     & .fieldset__wrapper {
       display: flex;
       flex-direction: row;
       gap: 64px;
+      margin-left: 46px;
     }
   }
 }
 
 .fieldset-checkbox__title {
-  margin-bottom: 59px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 58px;
+  }
 }
 
 .fieldset-checkbox__title-wrapper {

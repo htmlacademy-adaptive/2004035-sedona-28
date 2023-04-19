@@ -8,25 +8,27 @@
       display: grid;
       grid-template-columns: repeat(2, 280px);
       gap: 16px;
-      justify-content: center;
+      justify-content: flex-start;
+      margin-left: 30px;
     }
   }
 
   @media (min-width: $desktop) {
     width: 960px;
-    padding-bottom: 28px;
+    padding-bottom: 49px;
 
     & .fieldset__wrapper {
       display: grid;
       grid-template-columns: repeat(3, 280px);
       gap: 28px;
       justify-content: center;
+      margin-left: 41px;
     }
   }
 }
 
 .fieldset-radio__title {
   @media (min-width: $desktop) {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 }

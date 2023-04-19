@@ -1,17 +1,18 @@
 .fieldset-comments {
-  padding-bottom: 56px;
+  padding-bottom: 53px;
 
   @media (min-width: $tablet) {
     width: 100%;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 48px;
+    padding-bottom: 44px;
   }
 }
 
 .fieldset-comments__input {
   width: 280px;
+  height: 150px;
   box-sizing: border-box;
   resize: none;
 
