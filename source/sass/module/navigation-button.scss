@@ -3,7 +3,7 @@
   padding: 0;
   display: block;
   background-color: $main-color;
-  mask-image: url("../../img/open-menu.svg");
+  mask-image: url("../img/open-menu.svg");
   mask-repeat: no-repeat;
 
   &:hover {
@@ -16,7 +16,7 @@
 
   &--open {
     background-color: #ffffff;
-    mask-image: url("../../img/close-menu.svg");
+    mask-image: url("../img/close-menu.svg");
   }
 
   @media (min-width: $tablet) {
