@@ -102,7 +102,7 @@ const sprite = () => {
         }
       }
     }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('source/img'))
 }
 
 // Clean
