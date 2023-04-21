@@ -114,7 +114,12 @@ const clean = () => {
 // Copy
 
 const copy = () => {
-  return gulp.src(['source/fonts/*.*', 'source/manifest.webmanifest', 'source/favicon.ico'], { base: 'source' })
+  return gulp.src([
+    'source/fonts/*.*',
+    'source/img/favicon/*.png',
+    'source/manifest.webmanifest',
+    'source/favicon.ico'
+  ], { base: 'source' })
     .pipe(gulp.dest('build'))
 }
 
