@@ -32,13 +32,13 @@
 
   &--phone {
     &::after {
-      background-image: url("../img/sprite.svg#phone");
+      background-image: url("../../img/sprite.svg#phone");
     }
   }
 
   &--email {
     &::after {
-      background-image: url("../img/sprite.svg#email");
+      background-image: url("../../img/sprite.svg#email");
     }
   }
 }

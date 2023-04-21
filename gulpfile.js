@@ -14,11 +14,20 @@ import terser from 'gulp-terser';
 import svgmin from 'gulp-svgmin';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
 import svgSprite from 'gulp-svg-sprite';
+import postcssScss from 'postcss-scss';
+import postcssUrl from 'postcss-url';
+import postcssImport from 'postcss-import';
 
 // Styles
 
 const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
+    .pipe(postcss([
+      postcssImport(),
+      postcssUrl()
+    ], {
+      syntax: postcssScss
+    }))
     .pipe(plumber({
       errorHandler: notify.onError(function(err) {
         return {
@@ -37,17 +46,6 @@ const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-}
-
-const styleServer = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -70,7 +68,7 @@ const sctipt = () => {
 // Image
 
 const optimiseImage = () => {
-  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/**/*.svg'])
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicon/*.png'])
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
@@ -83,14 +81,6 @@ const createWebp = () => {
       webp: {}
     }))
     .pipe(gulp.dest('build/img'))
-}
-
-const createWebpServer = () => {
-  return gulp.src('source/img/*.{jpg,png}')
-    .pipe(squoosh({
-      webp: {}
-    }))
-    .pipe(gulp.dest('source/img'))
 }
 
 // SVG
@@ -110,7 +100,7 @@ const sprite = () => {
         }
       }
     }))
-    .pipe(gulp.dest('source/img'))
+    .pipe(gulp.dest('build/img'))
 }
 
 // Clean
@@ -122,30 +112,31 @@ const clean = () => {
 // Copy
 
 const copy = () => {
-  return gulp.src(['source/fonts/*.*', 'source/img/sprite.svg'], { base: 'source' })
+  return gulp.src(['source/fonts/*.*', 'source/manifest.webmanifest', 'source/favicon.ico'], { base: 'source' })
     .pipe(gulp.dest('build'))
 }
 
 // Server
 
+const watcher = () => {
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/*.html').on('change', browser.reload);
+}
+
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
     ui: false,
   });
   done();
+  watcher();
 }
 
 // Watcher
-
-const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styleServer));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
 
 const build = gulp.series(
   clean,
@@ -161,8 +152,24 @@ const build = gulp.series(
   )
 )
 
-gulp.task('build', build)
+const start = gulp.series(
+  clean,
+  gulp.parallel(
+    html,
+    styles,
+    sctipt,
+    optimiseImage,
+    createWebp,
+    svg,
+    sprite,
+    copy
+  ),
+  server
+)
 
-export default gulp.series(
-  styleServer, createWebpServer, sprite, server, watcher
-);
+gulp.task('build', build)
+gulp.task('default', start)
+
+// export default gulp.series(
+//   styles, sprite, server, watcher
+// );

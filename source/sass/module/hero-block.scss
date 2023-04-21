@@ -1,7 +1,7 @@
 .hero-block {
   position: relative;
   box-sizing: border-box;
-  background-image: url("../img/intro-triangle.svg"), url("../img/back-hero.webp");
+  background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero.webp");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom -0.2px, center;
   background-size: auto, cover;
@@ -9,15 +9,11 @@
   color: #ffffff;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-triangle.svg"), url("../img/back-hero@2x.webp");
-  }
-
-  @media (min-width: $tablet) and (max-width: $desktop) {
-    background-image: url("../img/intro-triangle.svg"), url("../img/back-hero-tablet.webp");
+    background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero@2x.webp");
   }
 
   // @media (min-resolution: 2dppx) and (min-width: $tablet) and (max-width: $desktop) {
-  //   background-image: url("../img/intro-triangle.svg"), url("../img/back-hero-tablet@2x.webp");
+  //   background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet@2x.webp");
   // }
 
   @media (min-width: $tablet) {
@@ -34,6 +30,10 @@
     background-size: auto, 285%;
     background-position: center bottom -0.2px, right 50% bottom 5%;
     padding: 52px 45px 76px;
+
+    @media (min-width: $tablet) and (max-width: $desktop) {
+      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet.webp");
+    }
 
     @media (min-width: $tablet) {
       height: 290px;
