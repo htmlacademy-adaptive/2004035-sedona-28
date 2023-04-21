@@ -13,6 +13,10 @@
     line-height: 124%;
   }
 
+  @media (min-width: $desktop) {
+    margin-bottom: 27px;
+  }
+
   &--with-line {
     @media (min-width: $tablet) {
       position: relative;

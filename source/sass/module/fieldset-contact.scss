@@ -1,8 +1,12 @@
 .fieldset-contact {
   padding-bottom: 34px;
 
+  @media (min-width: $tablet) {
+    width: 295px;
+  }
+
   @media (min-width: $desktop) {
-    width: 402px;
+    width: 430px;
   }
 }
 
@@ -24,9 +28,15 @@
     color: #000000;
   }
 
+  @media (min-width: $tablet) {
+    &::after {
+      transform: translate(218px);
+    }
+  }
+
   @media (min-width: $desktop) {
     &::after {
-      transform: translate(328px);
+      transform: translate(357px);
     }
   }
 
@@ -47,7 +57,13 @@
   box-sizing: border-box;
   width: 222px;
 
+  @media (min-width: $tablet) {
+    width: 234px;
+    padding: 16px 13px;
+  }
+
   @media (min-width: $desktop) {
-    width: 344px;
+    width: 373px;
+    padding: 16px;
   }
 }

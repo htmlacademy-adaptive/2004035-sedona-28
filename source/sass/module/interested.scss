@@ -4,11 +4,11 @@
   padding: 41px 0 49px;
 
   @media (min-width: $tablet) {
-    padding: 51px 100px 55px;
+    padding: 56px 100px 51px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 59px;
+    padding-top: 80px;
     padding-bottom: 66px;
   }
 }
@@ -19,7 +19,7 @@
   line-height: 124%;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 17px;
   text-align: center;
 
   @media (min-width: $tablet) {
@@ -48,12 +48,16 @@
 }
 
 .interested__link {
-  margin-top: 11px;
+  margin-top: 32px;
 
   @media (min-width: $tablet) {
     width: 458px;
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 49px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 45px;
   }
 }

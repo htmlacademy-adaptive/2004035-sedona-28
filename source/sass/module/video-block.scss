@@ -56,5 +56,9 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  width: 455px;
+  width: 266px;
+
+  @media (min-width: $tablet) {
+    width: 455px;
+  }
 }

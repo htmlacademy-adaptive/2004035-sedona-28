@@ -55,6 +55,7 @@ const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
+    .pipe(browser.stream());
 }
 
 // Script
@@ -63,6 +64,7 @@ const sctipt = () => {
   return gulp.src('source/js/*js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Image
@@ -120,7 +122,9 @@ const copy = () => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.js').on('change', browser.reload);
+  gulp.watch('source/*.html').on('change', gulp.series(html));
+  gulp.watch('build/*.html').on('change', browser.reload);
 }
 
 const server = (done) => {

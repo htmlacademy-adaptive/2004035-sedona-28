@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet) {
     width: 648px;
-    padding: 64px;
+    padding: 64px 59px;
     margin: 0 auto;
   }
 
@@ -35,10 +35,10 @@
 
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: 430px 402px;
+    grid-template-columns: 430px 430px;
 
     &::before {
-      transform: translate(-50%) translate(11px) rotate(90deg);
+      transform: translate(-50%) translate(0, 13px) rotate(90deg);
     }
   }
 }
