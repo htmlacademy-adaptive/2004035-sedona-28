@@ -40,15 +40,15 @@
   position: relative;
 
   &--vk {
-    mask-image: url("../../img/svg/vk.svg");
+    mask-image: url("../../img/sprite.svg#vk");
   }
 
   &--telegram {
-    mask-image: url("../../img/svg/telegram.svg");
+    mask-image: url("../../img/sprite.svg#telegram");
   }
 
   &--youtube {
-    mask-image: url("../../img/svg/youtube.svg");
+    mask-image: url("../../img/sprite.svg#youtube");
   }
 
   &:active {

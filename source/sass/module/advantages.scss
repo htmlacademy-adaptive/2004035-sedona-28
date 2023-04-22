@@ -1,11 +1,11 @@
 .advantages__header {
-  padding: 23px 0;
+  padding: 30px 0;
 
   @media (min-width: $tablet) {
     padding: 47.5px 0 55.5px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding: 59px 0 45px;
   }
 }
@@ -49,10 +49,19 @@
 
     & .advantages__title {
       color: #000000;
+
+      @media (min-width: $tablet) {
+        width: 155px;
+        line-height: 124%;
+      }
     }
 
     & .advantages__text-count {
       color: #333333;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 23px;
+      }
     }
 
     & .advantages__text {
@@ -101,19 +110,27 @@
   }
 
   &--small-wrapper {
-    padding: 24px 0;
+    padding: 23px 0 26px;
 
     @media (min-width: $tablet) {
-      padding: 41px 33px 72px;
+      padding: 41px 33px 43px;
     }
+
+    @media (min-width: $desktop) {
+      padding: 52px 33px 32px;
+    }
+
+    // &:last-child .advantages__text {
+    //   width: 260px;
+    // }
   }
 }
 
 .advantages__item-wrapper {
-  padding: 54px 0 40px;
+  padding: 54px 0 38px;
 
   @media (min-width: $tablet) {
-    padding: 41px 33px 40px;
+    padding: 49px 33px 34px;
   }
 
   &--first {
@@ -123,9 +140,12 @@
   }
 
   &--second {
+    padding-top: 35px;
+
     @media (min-width: $tablet) {
       background-color: $main-color;
       grid-column: 3/4;
+      padding-top: 50px;
     }
   }
 }
@@ -141,8 +161,9 @@
 
   @media (min-width: $tablet) {
     font-size: 21px;
-    width: 180px;
+    width: 150px;
     margin: 0 auto;
+    line-height: 124%;
   }
 }
 
@@ -152,7 +173,7 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  width: 230px;
+  // width: 240px;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
@@ -167,7 +188,11 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin: 11px 0 17px;
+  margin: 13px 0 17px;
+
+  @media (min-width: $tablet) {
+    margin: 13px 0 24px;
+  }
 }
 
 .advantages__picture {
@@ -204,7 +229,7 @@
 
 .advantages__addition-list {
   @include reset-list;
-  padding: 23px 0 46px;
+  padding: 22px 0 46px;
 
   @media (min-width: $tablet) {
     grid-column: 1/-1;

@@ -1,0 +1,25 @@
+.sentence {
+  &--mobile {
+    display: block;
+
+    @media (min-width: $tablet) {
+      display: inline;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet) {
+      display: block;
+    }
+
+    @media (min-width: $desktop) {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+}

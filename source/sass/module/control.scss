@@ -62,10 +62,10 @@
     width: 22px;
     height: 16px;
     background-color: #333333;
-    mask-image: url("../../img/svg/tick.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 22px 16px;
+    mask-image: url("../../img/sprite.svg#tick");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 22px 16px;
   }
 }
 

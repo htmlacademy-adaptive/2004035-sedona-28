@@ -4,7 +4,7 @@
 }
 
 .addition__item {
-  padding: 8px 0 0 47px;
+  padding: 10px 0 0 47px;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -12,30 +12,35 @@
   color: #000000;
 
   &--house {
-    background-image: url("../../img/svg/house.svg");
+    background-image: url("../../img/sprite.svg#house");
   }
 
   &--food {
-    background-image: url("../../img/svg/burger.svg");
+    background-image: url("../../img/sprite.svg#burger");
   }
 
   &--souvenirs {
-    background-image: url("../../img/svg/souvenirs.svg");
+    background-image: url("../../img/sprite.svg#souvenirs");
   }
 
   &:nth-child(2) {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 23px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $tablet) {
-    padding: 156px 33px 70px;
+    padding: 155px 33px 62px;
     background-size: 80px 80px;
     background-position: center 57px, center;
 
     &:nth-child(2) {
       margin: 0;
     }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 166px 33px 71px;
+    background-position: center 65px, center;
   }
 }
 
@@ -50,6 +55,7 @@
   @media (min-width: $tablet) {
     font-size: 21px;
     text-align: center;
+    margin: 0 0 21px 0;
   }
 }
 
