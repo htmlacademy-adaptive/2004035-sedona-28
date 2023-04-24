@@ -2,19 +2,6 @@
   margin-top: 38px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 48px;
-    height: 54px;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255);
-    mask-image: url("../../img/sprite.svg#polygon");
-    mask-repeat: no-repeat;
-  }
-
   @media (min-width: $tablet) {
     margin: 0;
   }
@@ -23,4 +10,16 @@
 .video__img {
   display: block;
   width: 100%;
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 54px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  mask-image: url("../../img/sprite.svg#polygon");
+  mask-repeat: no-repeat;
 }

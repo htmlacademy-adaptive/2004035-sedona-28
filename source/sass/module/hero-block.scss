@@ -5,6 +5,7 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom -0.2px, center;
   background-size: auto, cover;
+  background-color: #d7e3ed;
   padding: 90px 19px 85px;
   color: #ffffff;
 
@@ -35,6 +36,7 @@
     height: 158px;
     background-size: auto, cover;
     background-position: center bottom -0.2px, right 50% bottom 5%;
+    background-color: #7e605d;
     padding: 52px 45px 46px;
     background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile.webp");
 
@@ -72,10 +74,6 @@
 }
 
 .hero-block__text {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
 
   @media (min-width: $tablet) {
     display: block;
