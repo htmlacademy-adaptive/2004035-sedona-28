@@ -6,4 +6,8 @@
   @media (min-width: $tablet) {
     width: auto;
   }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 }

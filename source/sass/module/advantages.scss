@@ -24,7 +24,8 @@
 }
 
 .advantages__item {
-  &--blue {
+  &--blue,
+  &--blue-second {
     background-color: $main-color;
     color: #000000;
 
@@ -40,6 +41,12 @@
 
     @media (min-width: $desktop) {
       grid-template-columns: repeat(3, 400px);
+    }
+  }
+
+  &--blue-second {
+    @media (min-width: $tablet) {
+      grid-column: 1/-1;
     }
   }
 
@@ -70,10 +77,6 @@
 
     @media (min-width: $tablet) {
       grid-row: 3/4;
-
-      &:nth-child(1) {
-        grid-column: 1/2;
-      }
     }
   }
 
@@ -119,10 +122,6 @@
     @media (min-width: $desktop) {
       padding: 52px 33px 32px;
     }
-
-    // &:last-child .advantages__text {
-    //   width: 260px;
-    // }
   }
 }
 
@@ -173,7 +172,6 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  // width: 240px;
   margin: 0 auto;
 
   @media (min-width: $tablet) {

@@ -33,10 +33,10 @@
   }
 
   &:hover {
-    color: rgba(129, 179, 210, 1);
+    color: $footer-text-hover;
 
     &::after {
-      background-color: rgba(129, 179, 210, 1);
+      background-color: $footer-text-hover;
     }
   }
 
