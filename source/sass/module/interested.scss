@@ -26,6 +26,7 @@
     font-size: 30px;
     line-height: 87%;
     margin-bottom: 30px;
+    padding: 0 200px;
   }
 
   @media (min-width: $desktop) {
@@ -42,7 +43,8 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    width: 435px;
+    // width: 435px;
+    padding: 0 100px;
     margin: 0 auto;
   }
 }

@@ -10,17 +10,23 @@
   }
 }
 
+.fieldset-contact__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .fieldset-contact__label {
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
+    // top: 20px;
+    bottom: 0;
     left: 0;
     width: 58px;
     height: 58px;
-    transform: translate(206px);
+    transform: translate(205px, 59.4px);
     background-color: #e6e6e6;
     background-size: 18px 18px;
     background-position: center;
@@ -30,13 +36,14 @@
 
   @media (min-width: $tablet) {
     &::after {
-      transform: translate(218px);
+      transform: translate(218px, 59.5px);
+      // transform: translate(218px);
     }
   }
 
   @media (min-width: $desktop) {
     &::after {
-      transform: translate(357px);
+      transform: translate(357px, 59.6px);
     }
   }
 
