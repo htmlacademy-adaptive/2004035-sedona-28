@@ -57,6 +57,7 @@
     @media (min-width: $desktop) {
       max-width: 1200px;
       padding: 0 280px;
+
       &::before {
         width: 280px;
       }
