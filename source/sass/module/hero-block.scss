@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop) {
     background-size: contain, cover;
-    padding: 78px 200px 90px;
+    padding: 78px 100px 90px;
   }
 
   &--not-index {
@@ -38,13 +38,13 @@
     @media (min-width: $tablet) {
       height: 290px;
       background-size: auto, auto;
-      padding: 95px 154px 117.4px;
+      padding: 95px 50px 117.4px;
     }
 
     @media (min-width: $desktop) {
       height: 301px;
       background-size: contain, cover;
-      padding: 102px 250px 105.2px;
+      padding: 102px 100px 105.2px;
     }
   }
 
