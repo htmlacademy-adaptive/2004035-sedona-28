@@ -1,12 +1,13 @@
+/* stylelint-disable declaration-block-no-duplicate-properties, value-list-comma-newline-after */
 .hero-block {
   position: relative;
   box-sizing: border-box;
   background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile-index.jpg");
   background-image: url("../../img/intro-triangle.svg"), image-set(
-    url("../../img/back-hero-mobile-index.webp") 1x type("image/webp"),
-    url("../../img/back-hero-mobile-index.jpg") 1x,
-    url("../../img/back-hero-mobile-index@2x.webp") 2x type("image/webp"),
-    url("../../img/back-hero-mobile-index@2x.jpg") 2x
+      url("../../img/back-hero-mobile-index.webp") 1x type("image/webp"),
+      url("../../img/back-hero-mobile-index.jpg") 1x,
+      url("../../img/back-hero-mobile-index@2x.webp") 2x type("image/webp"),
+      url("../../img/back-hero-mobile-index@2x.jpg") 2x
   );
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom -0.2px, center;
@@ -108,3 +109,4 @@
     }
   }
 }
+/* stylelint-enable declaration-block-no-duplicate-properties, value-list-comma-newline-after */
