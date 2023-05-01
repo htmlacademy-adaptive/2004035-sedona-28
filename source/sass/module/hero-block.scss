@@ -1,7 +1,14 @@
+/* stylelint-disable declaration-block-no-duplicate-properties, value-list-comma-newline-after */
 .hero-block {
   position: relative;
   box-sizing: border-box;
   background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile-index.jpg");
+  background-image: url("../../img/intro-triangle.svg"), image-set(
+      url("../../img/back-hero-mobile-index.webp") 1x type("image/webp"),
+      url("../../img/back-hero-mobile-index.jpg") 1x,
+      url("../../img/back-hero-mobile-index@2x.webp") 2x type("image/webp"),
+      url("../../img/back-hero-mobile-index@2x.jpg") 2x
+  );
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom -0.2px, center;
   background-size: auto, cover;
@@ -9,51 +16,27 @@
   padding: 90px 19px 85px;
   color: #ffffff;
 
-  @supports (background-image: url("../../img/back-hero-mobile-index.webp")) {
-    background-image: url("../../img/back-hero-mobile-index.webp");
-  }
-
-  @media (min-resolution: 2dppx) and (max-width: $tablet) {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile-index@2x.jpg");
-
-    @supports (background-image: url("../../img/back-hero-mobile-index@2x.webp")) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile-index@2x.webp");
-    }
-  }
-
   @media (min-width: $tablet) {
     padding: 77px 100px 91px;
     background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet-index.jpg");
-
-    @supports (background-image: url("../../img/back-hero-tablet-index.webp")) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet-index.webp");
-    }
-  }
-
-  @media (min-resolution: 2dppx) and (min-width: $tablet) {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet-index@2x.jpg");
-
-    @supports (background-image: url("../../img/back-hero-tablet-index@2x.webp")) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet-index@2x.webp");
-    }
+    background-image: url("../../img/intro-triangle.svg"), image-set(
+      url("../../img/back-hero-tablet-index.webp") 1x type("image/webp"),
+      url("../../img/back-hero-tablet-index.jpg") 1x,
+      url("../../img/back-hero-tablet-index@2x.webp") 2x type("image/webp"),
+      url("../../img/back-hero-tablet-index@2x.jpg") 2x
+    );
   }
 
   @media (min-width: $desktop) {
     background-size: contain, cover;
     padding: 78px 100px 90px;
     background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop-index.jpg");
-
-    @supports (background-image: url("../../img/back-hero-desktop-index.webp")) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop-index.webp");
-    }
-  }
-
-  @media (min-resolution: 2dppx) and (min-width: $desktop) {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop-index@2x.jpg");
-
-    @supports (background-image: url("../../img/back-hero-desktop-index@2x.webp")) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop@2x.webp");
-    }
+    background-image: url("../../img/intro-triangle.svg"), image-set(
+      url("../../img/back-hero-desktop-index.webp") 1x type("image/webp"),
+      url("../../img/back-hero-desktop-index.jpg") 1x,
+      url("../../img/back-hero-desktop-index@2x.webp") 2x type("image/webp"),
+      url("../../img/back-hero-desktop-index@2x.jpg") 2x
+    );
   }
 
   &--not-index {
@@ -63,37 +46,24 @@
     background-color: #7e605d;
     padding: 52px 45px 46px;
     background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile.jpg");
-
-    @supports (background-image: url("../../img/back-hero-mobile.webp")) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile.webp");
-    }
-
-    @media (min-resolution: 2dppx) and (max-width: $tablet) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile@2x.jpg");
-
-      @supports (background-image: url("../../img/back-hero-mobile@2x.webp")) {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-mobile@2x.webp");
-      }
-    }
-
+    background-image: url("../../img/intro-triangle.svg"), image-set(
+      url("../../img/back-hero-mobile.webp") 1x type("image/webp"),
+      url("../../img/back-hero-mobile.jpg") 1x,
+      url("../../img/back-hero-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/back-hero-mobile@2x.jpg") 2x
+    );
 
     @media (min-width: $tablet) {
       height: 290px;
       background-size: auto, cover;
       padding: 95px 50px 117.4px;
       background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet.jpg");
-
-      @supports (background-image: url("../../img/back-hero-tablet.webp")) {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet.webp");
-      }
-    }
-
-    @media (min-resolution: 2dppx) and (min-width: $tablet) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet@2x.jpg");
-
-      @supports (background-image: url("../../img/back-hero-tablet@2x.webp")) {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-tablet@2x.webp");
-      }
+      background-image: url("../../img/intro-triangle.svg"), image-set(
+        url("../../img/back-hero-tablet.webp") 1x type("image/webp"),
+        url("../../img/back-hero-tablet.jpg") 1x,
+        url("../../img/back-hero-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/back-hero-tablet@2x.jpg") 2x
+      );
     }
 
     @media (min-width: $desktop) {
@@ -101,18 +71,12 @@
       background-size: contain, cover;
       padding: 102px 100px 105.2px;
       background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop.jpg");
-
-      @supports (background-image: url("../../img/back-hero-desktop.webp")) {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop.webp");
-      }
-    }
-
-    @media (min-resolution: 2dppx)  and (min-width: $desktop) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop@2x.jpg");
-
-      @supports (background-image: url("../../img/back-hero-desktop@2x.webp")) {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/back-hero-desktop@2x.webp");
-      }
+      background-image: url("../../img/intro-triangle.svg"), image-set(
+        url("../../img/back-hero-desktop.webp") 1x type("image/webp"),
+        url("../../img/back-hero-desktop.jpg") 1x,
+        url("../../img/back-hero-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/back-hero-desktop@2x.jpg") 2x
+      );
     }
   }
 
@@ -145,3 +109,4 @@
     }
   }
 }
+/* stylelint-enable declaration-block-no-duplicate-properties, value-list-comma-newline-after */
