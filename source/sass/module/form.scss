@@ -81,8 +81,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    width: 436px;
     margin: 0 auto;
+    padding: 0 105px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 260px;
   }
 }
 

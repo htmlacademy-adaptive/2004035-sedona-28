@@ -60,6 +60,11 @@
   width: 266px;
 
   @media (min-width: $tablet) {
-    width: 455px;
+    width: auto;
+    padding: 0 47px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 120px;
   }
 }

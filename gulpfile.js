@@ -78,7 +78,7 @@ const optimiseImage = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
     }))
@@ -127,7 +127,8 @@ const copy = () => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.js').on('change', browser.reload);
+  gulp.watch('source/*.js').on('change', gulp.series(sctipt));
+  gulp.watch('build/*.js').on('change', browser.reload);
   gulp.watch('source/*.html').on('change', gulp.series(html));
   gulp.watch('build/*.html').on('change', browser.reload);
 }
@@ -178,7 +179,3 @@ const start = gulp.series(
 
 gulp.task('build', build)
 gulp.task('default', start)
-
-// export default gulp.series(
-//   styles, sprite, server, watcher
-// );
