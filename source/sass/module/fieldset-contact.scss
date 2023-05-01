@@ -25,7 +25,7 @@
     left: 0;
     width: 58px;
     height: 58px;
-    transform: translate(205px, 59.4px);
+    transform: translate(205px, 58px);
     background-color: #e6e6e6;
     background-size: 18px 18px;
     background-position: center;
@@ -35,13 +35,13 @@
 
   @media (min-width: $tablet) {
     &::after {
-      transform: translate(218px, 59.5px);
+      transform: translate(218px, 58px);
     }
   }
 
   @media (min-width: $desktop) {
     &::after {
-      transform: translate(357px, 59.6px);
+      transform: translate(357px, 58px);
     }
   }
 

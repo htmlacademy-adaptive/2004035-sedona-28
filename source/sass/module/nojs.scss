@@ -1,8 +1,13 @@
 .nojs__navigation:focus-within > .nojs__navigation-button {
-  background-color: #ffffff;
-  mask-image: url("../../img/close-menu.svg");
+  // background-color: #ffffff;
+  // mask-image: url("../../img/close-menu.svg");
+  opacity: 0;
 }
 
 .nojs__navigation:focus-within > .nojs__navigation-list {
   display: block;
+}
+
+.nojs__map-frame {
+  display: none;
 }

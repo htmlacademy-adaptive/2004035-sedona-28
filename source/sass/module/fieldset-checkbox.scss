@@ -16,13 +16,15 @@
 
   @media (min-width: $desktop) {
     width: 960px;
-    padding-bottom: 59px;
+    padding-bottom: 29px;
 
     & .fieldset__wrapper {
       display: flex;
       flex-direction: row;
-      gap: 64px;
+      // gap: 64px;
+      gap: 0;
       margin-left: 45px;
+      padding: 31px 0;
     }
   }
 }
