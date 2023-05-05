@@ -35,8 +35,44 @@
   flex-direction: column;
   row-gap: 16px;
 
-  @media (min-width: $desktop) {
-    &--checkbox {
+  &--radio {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      gap: 16px;
+      justify-content: flex-start;
+      margin-left: 36px;
+    }
+
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: repeat(3, 280px);
+      gap: 28px;
+      justify-content: center;
+      margin-left: 41px;
+      padding: 20px 0;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 224px);
+      gap: 16px 31px;
+      justify-content: flex-start;
+      margin-left: 84px;
+    }
+
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      row-gap: 15px;
+      max-width: 915px;
+      flex-wrap: wrap;
+      margin-left: 45px;
+      padding: 31px 0;
+
       & .form-group:not(:last-child) {
         margin-right: 64px;
       }

@@ -4,27 +4,11 @@
   @media (min-width: $tablet) {
     width: 648px;
     padding-bottom: 19px;
-
-    & .fieldset__wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 224px);
-      gap: 16px 31px;
-      justify-content: flex-start;
-      margin-left: 84px;
-    }
   }
 
   @media (min-width: $desktop) {
     width: 960px;
     padding-bottom: 29px;
-
-    & .fieldset__wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 0;
-      margin-left: 45px;
-      padding: 31px 0;
-    }
   }
 }
 

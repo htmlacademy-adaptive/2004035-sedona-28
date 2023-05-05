@@ -73,6 +73,15 @@
 
     & .advantages__text {
       color: #333333;
+      padding: 0 35px;
+
+      @media (min-width: $tablet) {
+        padding: 0;
+      }
+
+      @media (min-width: $desktop) {
+        padding: 0 25px;
+      }
     }
 
     @media (min-width: $tablet) {
@@ -113,14 +122,14 @@
   }
 
   &--small-wrapper {
-    padding: 23px 0 26px;
+    padding: 23px 0 25px;
 
     @media (min-width: $tablet) {
       padding: 41px 33px 43px;
     }
 
     @media (min-width: $desktop) {
-      padding: 52px 33px 32px;
+      padding: 52px 33px 52px;
     }
   }
 }
@@ -129,10 +138,24 @@
   padding: 54px 0 38px;
 
   @media (min-width: $tablet) {
-    padding: 49px 33px 33px;
+    padding: 53px 33px 30px;
   }
 
   &--first {
+    @media (max-width: $tablet) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -14px);
+        width: 320px;
+        height: 37px;
+        background-image: url("../../img/triangle.svg");
+      }
+    }
     @media (min-width: $tablet) {
       grid-column: 1/2;
     }
@@ -144,7 +167,7 @@
     @media (min-width: $tablet) {
       background-color: $main-color;
       grid-column: 3/4;
-      padding-top: 50px;
+      padding-top: 52px;
     }
   }
 }
@@ -162,6 +185,10 @@
     font-size: 21px;
     margin: 0 auto;
     line-height: 124%;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 70px;
   }
 }
 

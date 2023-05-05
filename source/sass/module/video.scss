@@ -22,4 +22,10 @@
   background-color: rgb(255, 255, 255);
   mask-image: url("../../img/sprite.svg#polygon");
   mask-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    width: 53px;
+    height: 60px;
+    transform: translate(-51%, -46%);
+  }
 }

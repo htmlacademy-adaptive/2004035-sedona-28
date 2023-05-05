@@ -32,7 +32,7 @@ const styles = () => {
       errorHandler: notify.onError(function(err) {
         return {
           title: 'SCSS',
-          message: "Error: <%= error.message %>",
+          message: 'Error: <%= error.message %>',
           sound: true
         }
       })

@@ -6,6 +6,12 @@
   color: #000000;
   box-sizing: border-box;
 
+  @media (max-width: $tablet) {
+    &--index {
+      padding: 42px 20px;
+    }
+  }
+
   & > *:not(:last-child) {
     margin-bottom: 29px;
 
