@@ -4,6 +4,10 @@
   @media (min-width: $tablet) {
     padding: 0 50px 82px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 50px 92px;
+  }
 }
 
 .gallery-text__title {
@@ -26,5 +30,9 @@
   @media (min-width: $tablet) {
     margin: 0 auto;
     padding: 0 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 330px;
   }
 }

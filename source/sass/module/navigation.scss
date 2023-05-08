@@ -34,6 +34,7 @@
     grid-template-columns: repeat(5, 153px);
     background-color: #ffffff;
     z-index: 0;
+    row-gap: 25px;
   }
 
   @media (min-width: $desktop) {
@@ -113,6 +114,21 @@
 
     &--current {
       color: #766357;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .nojs {
+    & .navigation {
+      position: static;
+      margin-top: 110px;
+    }
+
+    & .navigation__list {
+      display: block;
+      position: static;
+      width: 100%;
     }
   }
 }

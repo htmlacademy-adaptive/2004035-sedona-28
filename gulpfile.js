@@ -126,10 +126,11 @@ const copy = () => {
 // Server
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.js').on('change', gulp.series(sctipt));
-  gulp.watch('build/*.js').on('change', browser.reload);
-  gulp.watch('source/*.html').on('change', gulp.series(html));
+  gulp.watch('source/sass/**/*.scss', styles);
+  gulp.watch('build/css/*.css').on('change', browser.reload);
+  gulp.watch('source/js/*.js', sctipt);
+  gulp.watch('build/js/*.js').on('change', browser.reload);
+  gulp.watch('source/*.html').on('change', html);
   gulp.watch('build/*.html').on('change', browser.reload);
 }
 
