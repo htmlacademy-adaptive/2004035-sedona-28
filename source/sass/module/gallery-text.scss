@@ -1,8 +1,12 @@
 .gallery-text {
-  padding-bottom: 44px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet) {
-    padding: 0 50px 87px;
+    padding: 0 50px 82px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 50px 92px;
   }
 }
 
@@ -26,5 +30,9 @@
   @media (min-width: $tablet) {
     margin: 0 auto;
     padding: 0 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 330px;
   }
 }

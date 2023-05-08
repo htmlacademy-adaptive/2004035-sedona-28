@@ -1,15 +1,15 @@
 .gallery {
-  margin-top: 30px;
+  margin-top: 38px;
 
   @media (min-width: $tablet) {
     width: 648px;
-    padding: 61px 20px 0;
+    padding: 67px 20px 0;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
     width: 1200px;
-    padding: 105px 0 0;
+    padding: 99px 0 0;
   }
 }
 

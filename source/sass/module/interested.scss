@@ -4,11 +4,11 @@
   padding: 41px 0 49px;
 
   @media (min-width: $tablet) {
-    padding: 56px 100px 51px;
+    padding: 60px 100px 56px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 66px;
   }
 }
@@ -19,13 +19,13 @@
   line-height: 124%;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 17px;
+  margin: 0 0 20px;
   text-align: center;
 
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 87%;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding: 0 20px;
   }
 
@@ -43,7 +43,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 0 100px;
+    padding: 0 65px;
     margin: 0 auto;
   }
 }
@@ -55,7 +55,7 @@
     width: 458px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 49px;
+    margin-top: 44px;
   }
 
   @media (min-width: $desktop) {

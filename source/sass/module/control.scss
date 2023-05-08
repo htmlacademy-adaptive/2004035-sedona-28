@@ -21,6 +21,15 @@
   }
 }
 
+.control__input {
+  &[type="radio"]:disabled,
+  &[type="checkbox"]:disabled {
+    & + .control__mark {
+      background-color: #adadad;
+    }
+  }
+}
+
 .control__input[type="radio"]:checked + .control__mark--radio {
   &::after {
     content: "";
@@ -65,7 +74,7 @@
     mask-image: url("../../img/sprite.svg#tick");
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 22px 16px;
+    mask-size: 22px 23px;
   }
 }
 
@@ -81,6 +90,12 @@
   &:active .control__input:checked + .control__mark {
     &::after {
       background: rgba(51, 51, 51, 0.3);
+    }
+  }
+
+  &:active .control__input:disabled + .control__mark {
+    &::after {
+      background-color: #333333;
     }
   }
 }

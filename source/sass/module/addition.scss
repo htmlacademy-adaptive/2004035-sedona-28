@@ -31,7 +31,25 @@
   @media (min-width: $tablet) {
     padding: 155px 33px 62px;
     background-size: 80px 80px;
-    background-position: center 57px, center;
+    // background-position: center 57px, center;
+
+    &--house {
+      // background-size: 77px 72px;
+      background-size: 80px 83px;
+      background-position: 49% 22%;
+    }
+
+    &--food {
+      // background-size: 80.2px 67.9px;
+      background-size: 82px 81px;
+      background-position: 49.3% 22%;
+    }
+
+    &--souvenirs {
+      // background-size: 66.5px 75px;
+      background-size: 83px 81px;
+      background-position: 51.3% 24%;
+    }
 
     &:nth-child(2) {
       margin: 0;
@@ -40,7 +58,23 @@
 
   @media (min-width: $desktop) {
     padding: 166px 33px 71px;
-    background-position: center 65px, center;
+    background-position: 49% 27%;
+
+    &--house {
+      background-image: url("../../img/sprite.svg#iconHouse");
+      background-size: 79px 80px;
+      background-position: 49% 26%;
+    }
+
+    &--food {
+      background-image: url("../../img/sprite.svg#iconBurger");
+      background-size: 75px 76px;
+    }
+
+    &--souvenirs {
+      background-image: url("../../img/sprite.svg#iconGift");
+      background-size: 79px 79px;
+    }
   }
 }
 
