@@ -10,3 +10,9 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .fieldset__wrapper--checkbox .form-group:not(:last-child) {
+    margin-right: 64px;
+  }
+}
