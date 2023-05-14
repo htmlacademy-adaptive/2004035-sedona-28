@@ -142,7 +142,7 @@
   }
 
   &--first {
-    @media (max-width: $tablet) {
+    @media (max-width: calc($tablet - 1px)) {
       position: relative;
 
       &::after {
