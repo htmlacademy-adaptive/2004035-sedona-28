@@ -6,7 +6,7 @@
   color: #000000;
   box-sizing: border-box;
 
-  @media (max-width: $tablet) {
+  @media (max-width: calc($tablet - 1px)) {
     &--index {
       padding: 42px 20px;
     }
